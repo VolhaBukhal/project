@@ -1,0 +1,68 @@
+*
+    box-sizing: border-box
+    
+$text_color: yellow
+@mixin box
+    display: block
+    width: 250px
+    height: 250px
+    background-color: $text_color
+h1
+    color: $text_color
+    font-size: 50px
+    @include box
+h2    
+    color: $text_color
+.block
+    background-color: black
+    h3
+        color: $text_color
+    &_color
+        background-color: #ffffff
+        button
+            @include box
+
+button
+    width: 250px
+    height: 50px
+    background-color: yellow
+    border: none
+    cursor: pointer
+    outline: none
+    transition: 0.5s all
+    &:hover
+        background-color: blue
+        color: white
+    &:active
+        background-color: orange    
+    &:focus
+        background-color: grey 
+
+.circle
+    width: 50px
+    height: 50px
+    background-color: green
+    border-radius: 100%
+    margin-top: 10px
+    &:nth-child(2n)
+        background-color: red
+    &:before
+        content: ' '
+        display: block
+        height: 2px
+        width: 0%
+        background-color: black
+        transition: 0.5s all    
+    &:hover    
+        &::before
+            width: 100%
+
+            
+
+    
+            
+        
+
+
+    
+

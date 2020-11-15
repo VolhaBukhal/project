@@ -1,0 +1,31 @@
+h1 {
+  color: yellow;
+  font-size: 50px;
+  display: block;
+  width: 250px;
+  height: 250px;
+  background-color: yellow;
+}
+
+h2 {
+  color: yellow;
+}
+
+.block {
+  background-color: black;
+}
+
+.block h3 {
+  color: yellow;
+}
+
+.block_color {
+  background-color: #ffffff;
+}
+
+.block_color button {
+  display: block;
+  width: 250px;
+  height: 250px;
+  background-color: yellow;
+}
